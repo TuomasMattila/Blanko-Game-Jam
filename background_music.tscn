@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://da8jvg5gk6mhj"]
+
+[ext_resource type="AudioStream" uid="uid://brmempynmpdya" path="res://Assets/Sounds/Gourmet Race 64 Super Smash Bros. Ultimate-qMDcw2ZhnKM-192k-1700918097.mp3" id="1_64tgg"]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer"]
+process_mode = 3
+stream = ExtResource("1_64tgg")
+volume_db = -3.0
+autoplay = true

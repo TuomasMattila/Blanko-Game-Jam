@@ -11,13 +11,16 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	position.x -= Globals.collectible_speed * delta
-	
-	if position.x <= -160.0:
-		print("Game over")
-		Globals.game_over = true
-		queue_free()
+	if visible:
+		position.x -= Globals.collectible_speed * delta
+		
+		if position.x <= -160.0:
+			print("Game over")
+			Globals.game_over = true
+			queue_free()
 
 func _on_body_entered(body):
+	visible = false
+	position.x = 2000.0
+	$AudioStreamPlayer.play()
 	Globals.collebtibles_collected += 1
-	queue_free()

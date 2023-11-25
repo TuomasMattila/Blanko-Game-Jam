@@ -4,6 +4,7 @@ var score = 0
 var game_over = false
 
 var kroketti_success = false
+var kroketti_ball_moving = false
 var collebtibles_collected = 0
 var kurkkumopopeli_obstacles = 0
 

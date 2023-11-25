@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b1wdwy8dgcllf"]
+[gd_scene load_steps=10 format=3 uid="uid://b1wdwy8dgcllf"]
 
 [ext_resource type="Script" path="res://Emeriittus/collectible.gd" id="1_juse1"]
 [ext_resource type="Texture2D" uid="uid://bbarb6vb3i53u" path="res://Assets/Haalarimerkit/csshtml-300x300.webp" id="2_vfwfg"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dh75kdcm7o40o" path="res://Assets/Haalarimerkit/kurkkumopo.webp" id="5_dqw6r"]
 [ext_resource type="Texture2D" uid="uid://6oy5n512wwac" path="res://Assets/Haalarimerkit/waifu.webp" id="6_u825o"]
 [ext_resource type="Texture2D" uid="uid://v2s1lckcfbt5" path="res://Assets/Haalarimerkit/akateeminen-vapaus-285x300.webp" id="7_6mfo6"]
+[ext_resource type="AudioStream" uid="uid://dgfthuphopvj3" path="res://Assets/Sounds/415083__harrietniamh__video-game-coin.wav" id="8_t4omb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d4o4s"]
 radius = 32.0
@@ -54,5 +55,8 @@ texture = ExtResource("7_6mfo6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_d4o4s")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_t4omb")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

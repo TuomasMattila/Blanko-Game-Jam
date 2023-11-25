@@ -1,18 +1,20 @@
 extends Node2D
 
 const SPEED = 750
-var moving = false
 var time = 0.0
-	
+
+func _ready():
+	Globals.kroketti_ball_moving = false
+
 func _process(delta):
 	time += delta
 	if Input.is_action_just_pressed("ui_accept") and time > 1.0:
-		moving = true
+		Globals.kroketti_ball_moving = true
 		$Polygon2D.visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	if moving:
+	if Globals.kroketti_ball_moving:
 		position += transform.x * SPEED * delta
 
 

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bk5dnfil3wvmi"]
+[gd_scene load_steps=6 format=3 uid="uid://bk5dnfil3wvmi"]
 
 [ext_resource type="Script" path="res://Kurkkumopopeli/Kurkkumopo.gd" id="1_lu3tm"]
 [ext_resource type="Texture2D" uid="uid://dyueqs3r62bxs" path="res://Assets/kurkkumopo.png" id="2_kf2x0"]
 [ext_resource type="Texture2D" uid="uid://blgvqpnkhc0so" path="res://Assets/blanko_ukko.png" id="2_qmm1v"]
+[ext_resource type="AudioStream" uid="uid://brl7ro0mpd6m2" path="res://Assets/Sounds/386639__jalastram__sfx_jump_50.wav" id="4_vxx2r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lik3j"]
 size = Vector2(128, 76)
@@ -23,3 +24,7 @@ texture = ExtResource("2_qmm1v")
 scale = Vector2(0.137778, 0.137778)
 texture = ExtResource("2_kf2x0")
 flip_h = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_vxx2r")
+volume_db = -3.0

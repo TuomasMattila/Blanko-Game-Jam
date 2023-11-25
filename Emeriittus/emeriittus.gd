@@ -18,6 +18,7 @@ func _physics_process(delta):
 
 	# Handle Jump.
 	if Input.is_action_just_pressed("ui_accept") and jump_cooldown <= 0:
+		$AudioStreamPlayer.play()
 		velocity.y = JUMP_VELOCITY
 		rotation = -1.0
 		jump_cooldown = 0.2

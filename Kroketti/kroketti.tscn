@@ -165,6 +165,7 @@ script = ExtResource("1_5r3m4")
 
 [node name="Maila" parent="Rotation" instance=ExtResource("2_dfb4g")]
 position = Vector2(-20, -1)
+script = null
 
 [node name="Maali" parent="." instance=ExtResource("4_nidns")]
 position = Vector2(896, 384)

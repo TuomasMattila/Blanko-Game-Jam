@@ -1,12 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://ckd887d5jyi0v"]
+[gd_scene load_steps=3 format=3 uid="uid://ckd887d5jyi0v"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_e34jr"]
+[ext_resource type="AudioStream" uid="uid://sgabm3r7fa3x" path="res://Assets/Sounds/220173__gameaudio__spacey-1uppower-up.wav" id="2_ohves"]
 
 [node name="Main" type="Node2D"]
 process_mode = 3
 script = ExtResource("1_e34jr")
 
 [node name="GameMode" type="Node2D" parent="."]
+process_mode = 1
 
 [node name="Current" type="Node2D" parent="GameMode"]
 
@@ -37,3 +39,22 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 64
 text = "Game over"
+
+[node name="SuccessLabel" type="Label" parent="CanvasLayer"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.0
+offset_top = -45.5
+offset_right = 37.0
+offset_bottom = 45.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "+1"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ohves")

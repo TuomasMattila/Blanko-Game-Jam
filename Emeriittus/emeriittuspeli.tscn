@@ -40,7 +40,7 @@ texture = ExtResource("2_si3b0")
 
 [node name="Mid" type="ParallaxLayer" parent="ScrollingBackground"]
 motion_scale = Vector2(0.4, 1)
-motion_mirroring = Vector2(1240.67, 0)
+motion_mirroring = Vector2(1240, 0)
 
 [node name="MidBackground" type="Sprite2D" parent="ScrollingBackground/Mid"]
 position = Vector2(588.114, 379.25)

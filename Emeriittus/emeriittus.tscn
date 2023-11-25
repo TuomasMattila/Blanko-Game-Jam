@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bnrvh7x7jybal"]
+[gd_scene load_steps=5 format=3 uid="uid://bnrvh7x7jybal"]
 
 [ext_resource type="Script" path="res://Emeriittus/emeriittus.gd" id="1_2y5ea"]
 [ext_resource type="Texture2D" uid="uid://dtlat1qu345gk" path="res://Assets/emeriittus.png" id="1_tc7yj"]
+[ext_resource type="AudioStream" uid="uid://c6qp6blnxt7dc" path="res://Assets/Sounds/389590__jofae__swing-woosh.wav" id="3_qn5sd"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0hqci"]
 radius = 14.742
@@ -24,5 +25,9 @@ shape = SubResource("CapsuleShape2D_0hqci")
 scale = Vector2(0.0179325, 0.0179325)
 texture = ExtResource("1_tc7yj")
 flip_h = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_qn5sd")
+volume_db = 10.0
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

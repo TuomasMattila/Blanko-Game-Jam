@@ -10,10 +10,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if Input.is_action_just_pressed("ui_accept") and time > 1.0:
-		rotate = false
-	
-	if rotate:
+func _process(delta):	
+	if Globals.kroketti_ball_moving == false:
 		time += delta
 		rotation = sin(time * Globals.rotation_speed_multiplier) * max_angle
