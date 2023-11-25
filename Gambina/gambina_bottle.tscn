@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://boxt0ultkd38m"]
+
+[ext_resource type="Script" path="res://Gambina/gambina_bottle.gd" id="1_r441j"]
+[ext_resource type="Texture2D" uid="uid://m55657ml5tf8" path="res://Assets/gambina-muovipullo_new.png" id="2_tthm3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eh8bv"]
+
+[node name="GambinaBottle" type="CharacterBody2D"]
+script = ExtResource("1_r441j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eh8bv")
+
+[node name="Gambina-muovipullo" type="Sprite2D" parent="."]
+position = Vector2(104, 120)
+rotation = -0.689405
+scale = Vector2(0.11035, 0.11035)
+texture = ExtResource("2_tthm3")

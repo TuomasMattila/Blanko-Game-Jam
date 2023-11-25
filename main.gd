@@ -4,13 +4,15 @@ var rng = RandomNumberGenerator.new()
 var emeriittuspeli = preload("res://Emeriittus/emeriittuspeli.tscn")
 var kroketti = preload("res://Kroketti/kroketti.tscn")
 var kurkkumopopeli = preload("res://Kurkkumopopeli/kurkkumopopeli.tscn")
-var game_modes = [emeriittuspeli, kroketti, kurkkumopopeli]
+var gambina = preload("res://Gambina/gambina.tscn")
+var game_modes = [emeriittuspeli, kroketti, kurkkumopopeli, gambina]
 var current_mode = 0
 var next_mode = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	current_mode = rng.randi_range(0, 2)
+	current_mode = rng.randi_range(0, len(game_modes) - 1)
+	#var current_mode = 3
 	var game_mode = game_modes[current_mode].instantiate()
 	get_child(0).get_child(0).replace_by(game_mode)
 
@@ -43,6 +45,10 @@ func _process(delta):
 	if Globals.kurkkumopopeli_obstacles >= 6:
 		Globals.kurkkumopopeli_obstacles = 0
 		next_game()
+		
+	if Globals.gambina_success:
+		Globals.gambina_success = false
+		next_game()
 
 func reset_variables():
 	Globals.score = 0
@@ -50,6 +56,7 @@ func reset_variables():
 	Globals.kroketti_success = false
 	Globals.collebtibles_collected = 0
 	Globals.kurkkumopopeli_obstacles = 0
+	Globals.gambina_success = false
 	Globals.rotation_speed_multiplier = 1.0
 	Globals.obstacle_speed = 1.0
 	Globals.collectible_speed = 350.0
@@ -62,7 +69,7 @@ func next_game():
 	await $AudioStreamPlayer.finished
 	next_mode = current_mode
 	while next_mode == current_mode:
-		next_mode = rng.randi_range(0, 2)
+		next_mode = rng.randi_range(0, len(game_modes) - 1)
 	var game_mode = game_modes[next_mode].instantiate()
 	get_child(0).get_tree().paused = false
 	$CanvasLayer/SuccessLabel.visible = false
@@ -72,8 +79,9 @@ func next_game():
 	
 func update_score():
 	Globals.score += 1
-	Globals.obstacle_speed += 0.1
+	Globals.obstacle_speed += 0.10
 	Globals.collectible_speed += 50.0
 	Globals.rotation_speed_multiplier += 0.3
+	Globals.gambina_difficulty += 0.001
 	$CanvasLayer/ScoreLabel.text = "Score: " + str(Globals.score)
 	

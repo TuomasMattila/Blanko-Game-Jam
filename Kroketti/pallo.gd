@@ -9,6 +9,7 @@ func _ready():
 func _process(delta):
 	time += delta
 	if Input.is_action_just_pressed("ui_accept") and time > 1.0:
+		$AudioStreamPlayer.play()
 		Globals.kroketti_ball_moving = true
 		$Polygon2D.visible = false
 
