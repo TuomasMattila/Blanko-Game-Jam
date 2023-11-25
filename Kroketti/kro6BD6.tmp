@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://y66aaiaqv7r3"]
+
+[ext_resource type="Script" path="res://Kroketti/Rotation.gd" id="1_5r3m4"]
+[ext_resource type="PackedScene" uid="uid://cgbaxu7pmo55d" path="res://Kroketti/pallo.tscn" id="1_incml"]
+[ext_resource type="PackedScene" uid="uid://ce0734ufw6lpo" path="res://Kroketti/maila.tscn" id="2_dfb4g"]
+[ext_resource type="PackedScene" uid="uid://6eui3py437im" path="res://Kroketti/maali.tscn" id="4_nidns"]
+
+[node name="Kroketti" type="Node2D"]
+
+[node name="Rotation" type="Node2D" parent="."]
+position = Vector2(320, 384)
+script = ExtResource("1_5r3m4")
+
+[node name="Pallo" parent="Rotation" instance=ExtResource("1_incml")]
+
+[node name="Maila" parent="Rotation" instance=ExtResource("2_dfb4g")]
+position = Vector2(-20, -1)
+
+[node name="Maali" parent="." instance=ExtResource("4_nidns")]
+position = Vector2(896, 384)
+scale = Vector2(0.7, 0.7)

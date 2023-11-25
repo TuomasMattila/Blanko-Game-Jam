@@ -1,0 +1,171 @@
+[gd_scene load_steps=6 format=3 uid="uid://y66aaiaqv7r3"]
+
+[ext_resource type="Script" path="res://Kroketti/Rotation.gd" id="1_5r3m4"]
+[ext_resource type="Texture2D" uid="uid://bx2j8t1iuwseg" path="res://Assets/seamless-textured-grass-natural-grass-pattern/Cartoon_green_texture_grass.jpg" id="1_h5qoq"]
+[ext_resource type="PackedScene" uid="uid://cgbaxu7pmo55d" path="res://Kroketti/pallo.tscn" id="1_incml"]
+[ext_resource type="PackedScene" uid="uid://ce0734ufw6lpo" path="res://Kroketti/maila.tscn" id="2_dfb4g"]
+[ext_resource type="PackedScene" uid="uid://6eui3py437im" path="res://Kroketti/maali.tscn" id="4_nidns"]
+
+[node name="Kroketti" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 1184.0
+offset_bottom = 672.0
+color = Color(0, 0.286275, 0, 1)
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="CartoonGreenTextureGrass" type="Sprite2D" parent="Background"]
+position = Vector2(64, 576)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass2" type="Sprite2D" parent="Background"]
+position = Vector2(256, 576)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass3" type="Sprite2D" parent="Background"]
+position = Vector2(448, 576)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass4" type="Sprite2D" parent="Background"]
+position = Vector2(640, 576)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass5" type="Sprite2D" parent="Background"]
+position = Vector2(832, 576)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass6" type="Sprite2D" parent="Background"]
+position = Vector2(1024, 576)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass7" type="Sprite2D" parent="Background"]
+position = Vector2(1216, 576)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass8" type="Sprite2D" parent="Background"]
+position = Vector2(1216, 384)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass9" type="Sprite2D" parent="Background"]
+position = Vector2(1024, 384)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass10" type="Sprite2D" parent="Background"]
+position = Vector2(832, 384)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass11" type="Sprite2D" parent="Background"]
+position = Vector2(640, 384)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass12" type="Sprite2D" parent="Background"]
+position = Vector2(448, 384)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass13" type="Sprite2D" parent="Background"]
+position = Vector2(256, 384)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass14" type="Sprite2D" parent="Background"]
+position = Vector2(64, 384)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass15" type="Sprite2D" parent="Background"]
+position = Vector2(64, 192)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass16" type="Sprite2D" parent="Background"]
+position = Vector2(256, 192)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass17" type="Sprite2D" parent="Background"]
+position = Vector2(448, 192)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass18" type="Sprite2D" parent="Background"]
+position = Vector2(640, 192)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass19" type="Sprite2D" parent="Background"]
+position = Vector2(832, 192)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass20" type="Sprite2D" parent="Background"]
+position = Vector2(1024, 192)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass21" type="Sprite2D" parent="Background"]
+position = Vector2(1216, 192)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass22" type="Sprite2D" parent="Background"]
+position = Vector2(1216, 0)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass23" type="Sprite2D" parent="Background"]
+position = Vector2(1024, 0)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass24" type="Sprite2D" parent="Background"]
+position = Vector2(832, 0)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass25" type="Sprite2D" parent="Background"]
+position = Vector2(640, 0)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass26" type="Sprite2D" parent="Background"]
+position = Vector2(448, 0)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass27" type="Sprite2D" parent="Background"]
+position = Vector2(256, 0)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="CartoonGreenTextureGrass28" type="Sprite2D" parent="Background"]
+position = Vector2(64, 0)
+scale = Vector2(0.0460763, 0.0460763)
+texture = ExtResource("1_h5qoq")
+
+[node name="Rotation" type="Node2D" parent="."]
+position = Vector2(320, 384)
+script = ExtResource("1_5r3m4")
+
+[node name="Pallo" parent="Rotation" instance=ExtResource("1_incml")]
+
+[node name="Maila" parent="Rotation" instance=ExtResource("2_dfb4g")]
+position = Vector2(-20, -1)
+
+[node name="Maali" parent="." instance=ExtResource("4_nidns")]
+position = Vector2(896, 384)
+scale = Vector2(0.7, 0.7)

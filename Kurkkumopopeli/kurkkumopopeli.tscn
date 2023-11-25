@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://heupkprlrtn6"]
+
+[ext_resource type="PackedScene" uid="uid://bidb08rx6jmp5" path="res://Kurkkumopopeli/ground.tscn" id="1_2d78n"]
+[ext_resource type="Script" path="res://Kurkkumopopeli/CityBackground.gd" id="1_fulfx"]
+[ext_resource type="PackedScene" uid="uid://bk5dnfil3wvmi" path="res://Kurkkumopopeli/kurkkumopo.tscn" id="2_w56nn"]
+[ext_resource type="PackedScene" uid="uid://dc78uqeun6ayl" path="res://Kurkkumopopeli/obstacle_spawner.tscn" id="3_dqabq"]
+[ext_resource type="Texture2D" uid="uid://ip1q8d0hvk8q" path="res://Assets/Urban-landscape-files/layers/Sky-layer.png" id="4_ro75k"]
+[ext_resource type="Texture2D" uid="uid://cymiq8qpav7ui" path="res://Assets/Urban-landscape-files/layers/buildings-layer.png" id="5_m3d26"]
+
+[node name="Kurkkumopopeli" type="Node2D"]
+
+[node name="CityBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("1_fulfx")
+
+[node name="Sky" type="ParallaxLayer" parent="CityBackground"]
+motion_scale = Vector2(0.4, 1)
+motion_mirroring = Vector2(1248, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CityBackground/Sky"]
+position = Vector2(136, 280)
+scale = Vector2(2.78571, 2.78571)
+texture = ExtResource("4_ro75k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="CityBackground/Sky"]
+position = Vector2(448, 280)
+scale = Vector2(2.78571, 2.78571)
+texture = ExtResource("4_ro75k")
+
+[node name="Sprite2D3" type="Sprite2D" parent="CityBackground/Sky"]
+position = Vector2(760, 280)
+scale = Vector2(2.78571, 2.78571)
+texture = ExtResource("4_ro75k")
+
+[node name="Sprite2D4" type="Sprite2D" parent="CityBackground/Sky"]
+position = Vector2(1072, 280)
+scale = Vector2(2.78571, 2.78571)
+texture = ExtResource("4_ro75k")
+
+[node name="Buildings" type="ParallaxLayer" parent="CityBackground"]
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(1342, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CityBackground/Buildings"]
+position = Vector2(160, 448)
+scale = Vector2(1.73837, 1.73837)
+texture = ExtResource("5_m3d26")
+
+[node name="Sprite2D2" type="Sprite2D" parent="CityBackground/Buildings"]
+position = Vector2(496, 448)
+scale = Vector2(1.73837, 1.73837)
+texture = ExtResource("5_m3d26")
+
+[node name="Sprite2D3" type="Sprite2D" parent="CityBackground/Buildings"]
+position = Vector2(832, 448)
+scale = Vector2(1.73837, 1.73837)
+texture = ExtResource("5_m3d26")
+
+[node name="Sprite2D4" type="Sprite2D" parent="CityBackground/Buildings"]
+position = Vector2(1168, 448)
+scale = Vector2(1.73837, 1.73837)
+texture = ExtResource("5_m3d26")
+
+[node name="Ground" parent="." instance=ExtResource("1_2d78n")]
+z_index = 1
+
+[node name="Kurkkumopo" parent="." instance=ExtResource("2_w56nn")]
+z_index = 2
+position = Vector2(87, 516)
+
+[node name="ObstacleSpawner" parent="." instance=ExtResource("3_dqabq")]

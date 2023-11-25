@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=3 uid="uid://daqrnuitxaj6e"]
+
+[ext_resource type="Script" path="res://Kurkkumopopeli/obstacle.gd" id="1_oh6td"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vrgl"]
+size = Vector2(64, 64)
+
+[sub_resource type="Animation" id="Animation_x48gy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1344, 544)]
+}
+
+[sub_resource type="Animation" id="Animation_km5g0"]
+resource_name = "move_left"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1344, 544), Vector2(-128, 544)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2v3e4"]
+_data = {
+"RESET": SubResource("Animation_x48gy"),
+"move_left": SubResource("Animation_km5g0")
+}
+
+[node name="Obstacle" type="Area2D"]
+position = Vector2(1344, 544)
+script = ExtResource("1_oh6td")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8vrgl")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.184314, 0.184314, 0.184314, 1)
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2v3e4")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

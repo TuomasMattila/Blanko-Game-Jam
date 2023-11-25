@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://b1wdwy8dgcllf"]
+
+[ext_resource type="Script" path="res://Emeriittus/collectible.gd" id="1_juse1"]
+[ext_resource type="Texture2D" uid="uid://bbarb6vb3i53u" path="res://Assets/Haalarimerkit/csshtml-300x300.webp" id="2_vfwfg"]
+[ext_resource type="Texture2D" uid="uid://dakrk2do1u4w6" path="res://Assets/Haalarimerkit/emeriittus.webp" id="3_w5n4v"]
+[ext_resource type="Texture2D" uid="uid://dra02dx5q7tpv" path="res://Assets/Haalarimerkit/iisakka.webp" id="4_f3atm"]
+[ext_resource type="Texture2D" uid="uid://dh75kdcm7o40o" path="res://Assets/Haalarimerkit/kurkkumopo.webp" id="5_dqw6r"]
+[ext_resource type="Texture2D" uid="uid://6oy5n512wwac" path="res://Assets/Haalarimerkit/waifu.webp" id="6_u825o"]
+[ext_resource type="Texture2D" uid="uid://v2s1lckcfbt5" path="res://Assets/Haalarimerkit/akateeminen-vapaus-285x300.webp" id="7_6mfo6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d4o4s"]
+radius = 32.0
+
+[node name="Collectible" type="Area2D"]
+position = Vector2(1248, 288)
+script = ExtResource("1_juse1")
+
+[node name="Sprites" type="Node2D" parent="."]
+
+[node name="Csshtml-300x300" type="Sprite2D" parent="Sprites"]
+visible = false
+scale = Vector2(0.223333, 0.223333)
+texture = ExtResource("2_vfwfg")
+
+[node name="Emeriittus" type="Sprite2D" parent="Sprites"]
+visible = false
+position = Vector2(-1.09375, -1.58537)
+scale = Vector2(0.0744301, 0.0744301)
+texture = ExtResource("3_w5n4v")
+
+[node name="Iisakka" type="Sprite2D" parent="Sprites"]
+visible = false
+position = Vector2(-7.689e-06, -5.60284e-06)
+scale = Vector2(0.0780911, 0.0780911)
+texture = ExtResource("4_f3atm")
+
+[node name="Kurkkumopo" type="Sprite2D" parent="Sprites"]
+visible = false
+position = Vector2(0.499996, -0.557372)
+scale = Vector2(0.0754098, 0.0754098)
+texture = ExtResource("5_dqw6r")
+
+[node name="Waifu" type="Sprite2D" parent="Sprites"]
+visible = false
+position = Vector2(-0.679094, -0.500001)
+scale = Vector2(0.0857875, 0.0857875)
+texture = ExtResource("6_u825o")
+
+[node name="Akateeminen-vapaus-285x300" type="Sprite2D" parent="Sprites"]
+visible = false
+position = Vector2(-0.499983, 0.736925)
+scale = Vector2(0.221052, 0.221052)
+texture = ExtResource("7_6mfo6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_d4o4s")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

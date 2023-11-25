@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc78uqeun6ayl"]
+
+[ext_resource type="Script" path="res://Kurkkumopopeli/obstacle_spawner.gd" id="1_oy3fe"]
+
+[node name="ObstacleSpawner" type="Node"]
+script = ExtResource("1_oy3fe")

@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=3 uid="uid://b44meo3al12aa"]
+
+[ext_resource type="Texture2D" uid="uid://bj4aup04lg38m" path="res://Assets/sea_background/PNG/sea_background.png" id="1_8iop8"]
+[ext_resource type="PackedScene" uid="uid://bnrvh7x7jybal" path="res://Emeriittus/emeriittus.tscn" id="1_ldl2x"]
+[ext_resource type="Script" path="res://Emeriittus/ScrollingBackground.gd" id="1_t51jx"]
+[ext_resource type="PackedScene" uid="uid://bxq07ac4m0nw" path="res://Emeriittus/collectible_spawner.tscn" id="2_gy7w0"]
+[ext_resource type="Texture2D" uid="uid://bhf0eb0i77wiv" path="res://Assets/sea_background/PNG/farground.png" id="2_si3b0"]
+[ext_resource type="Texture2D" uid="uid://tucyanb81ow3" path="res://Assets/sea_background/PNG/mid_background.png" id="3_3yeik"]
+[ext_resource type="Texture2D" uid="uid://brihjeiejltpo" path="res://Assets/sea_background/PNG/foreground.png" id="4_tdy3l"]
+
+[node name="Emeriittuspeli" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 1184.0
+offset_bottom = 672.0
+color = Color(0, 0, 0.329412, 1)
+
+[node name="ScrollingBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("1_t51jx")
+
+[node name="Background" type="ParallaxLayer" parent="ScrollingBackground"]
+motion_scale = Vector2(0, 1)
+
+[node name="SeaBackground" type="Sprite2D" parent="ScrollingBackground/Background"]
+position = Vector2(576, 320)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("1_8iop8")
+
+[node name="Back" type="ParallaxLayer" parent="ScrollingBackground"]
+motion_scale = Vector2(0.2, 1)
+motion_mirroring = Vector2(1247.8, 0)
+
+[node name="Farground" type="Sprite2D" parent="ScrollingBackground/Back"]
+position = Vector2(592, 312.5)
+scale = Vector2(0.65, 0.651229)
+texture = ExtResource("2_si3b0")
+
+[node name="Mid" type="ParallaxLayer" parent="ScrollingBackground"]
+motion_scale = Vector2(0.4, 1)
+motion_mirroring = Vector2(1240.67, 0)
+
+[node name="MidBackground" type="Sprite2D" parent="ScrollingBackground/Mid"]
+position = Vector2(588.114, 379.25)
+scale = Vector2(0.645952, 0.645952)
+texture = ExtResource("3_3yeik")
+
+[node name="Front" type="ParallaxLayer" parent="ScrollingBackground"]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1262.46, 0)
+
+[node name="Foreground" type="Sprite2D" parent="ScrollingBackground/Front"]
+position = Vector2(567.33, 333.75)
+scale = Vector2(0.657636, 0.657635)
+texture = ExtResource("4_tdy3l")
+
+[node name="Emeriittus" parent="." instance=ExtResource("1_ldl2x")]
+position = Vector2(133, 314)
+
+[node name="CollectibleSpawner" parent="." instance=ExtResource("2_gy7w0")]
+position = Vector2(1.69379, -58.6422)

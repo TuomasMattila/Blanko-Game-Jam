@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce0734ufw6lpo"]
+
+[ext_resource type="Script" path="res://Kroketti/maila.gd" id="1_b8mom"]
+[ext_resource type="Texture2D" uid="uid://d4nh1fdb7ogdf" path="res://Assets/maila.png" id="1_i8xfq"]
+
+[node name="Maila" type="Node2D"]
+script = ExtResource("1_b8mom")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-47, -159)
+rotation = 0.359538
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_i8xfq")

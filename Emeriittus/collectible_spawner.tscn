@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxq07ac4m0nw"]
+
+[ext_resource type="Script" path="res://Emeriittus/collectible_spawner.gd" id="1_ahbk6"]
+
+[node name="CollectibleSpawner" type="Node2D"]
+script = ExtResource("1_ahbk6")

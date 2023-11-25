@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://bk5dnfil3wvmi"]
+
+[ext_resource type="Script" path="res://Kurkkumopopeli/Kurkkumopo.gd" id="1_lu3tm"]
+[ext_resource type="Texture2D" uid="uid://dyueqs3r62bxs" path="res://Assets/kurkkumopo.png" id="2_kf2x0"]
+[ext_resource type="Texture2D" uid="uid://blgvqpnkhc0so" path="res://Assets/blanko_ukko.png" id="2_qmm1v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lik3j"]
+size = Vector2(128, 76)
+
+[node name="Kurkkumopo" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_lu3tm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_lik3j")
+
+[node name="BlankoUkko" type="Sprite2D" parent="."]
+position = Vector2(-4, -63)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_qmm1v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.137778, 0.137778)
+texture = ExtResource("2_kf2x0")
+flip_h = true
