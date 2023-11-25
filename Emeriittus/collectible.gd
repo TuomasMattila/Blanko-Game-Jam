@@ -15,7 +15,6 @@ func _process(delta):
 		position.x -= Globals.collectible_speed * delta
 		
 		if position.x <= -160.0:
-			print("Game over")
 			Globals.game_over = true
 			queue_free()
 

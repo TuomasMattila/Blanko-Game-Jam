@@ -18,141 +18,169 @@ color = Color(0, 0.286275, 0, 1)
 [node name="Background" type="Node2D" parent="."]
 
 [node name="CartoonGreenTextureGrass" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(64, 576)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass2" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(256, 576)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass3" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(448, 576)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass4" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(640, 576)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass5" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(832, 576)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass6" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(1024, 576)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass7" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(1216, 576)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass8" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(1216, 384)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass9" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(1024, 384)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass10" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(832, 384)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass11" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(640, 384)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass12" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(448, 384)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass13" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(256, 384)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass14" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(64, 384)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass15" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(64, 192)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass16" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(256, 192)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass17" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(448, 192)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass18" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(640, 192)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass19" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(832, 192)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass20" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(1024, 192)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass21" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(1216, 192)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass22" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(1216, 0)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass23" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(1024, 0)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass24" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(832, 0)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass25" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(640, 0)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass26" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(448, 0)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass27" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(256, 0)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")
 
 [node name="CartoonGreenTextureGrass28" type="Sprite2D" parent="Background"]
+self_modulate = Color(0.698039, 0.698039, 0.698039, 1)
 position = Vector2(64, 0)
 scale = Vector2(0.0460763, 0.0460763)
 texture = ExtResource("1_h5qoq")

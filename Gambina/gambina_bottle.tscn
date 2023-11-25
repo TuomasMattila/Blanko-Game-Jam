@@ -12,7 +12,7 @@ script = ExtResource("1_r441j")
 shape = SubResource("RectangleShape2D_eh8bv")
 
 [node name="Gambina-muovipullo" type="Sprite2D" parent="."]
-position = Vector2(104, 120)
+position = Vector2(88, 104)
 rotation = -0.689405
-scale = Vector2(0.11035, 0.11035)
+scale = Vector2(0.0873702, 0.0873702)
 texture = ExtResource("2_tthm3")

@@ -19,7 +19,5 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.is_in_group("player"):
-		print("Game over")
 		Globals.game_over = true
-		# TODO: Game over
 		body.queue_free()
