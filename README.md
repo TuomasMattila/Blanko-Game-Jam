@@ -16,5 +16,5 @@ Space.
 
 ![emeriittuspeli](Screenshots/emeriittuspeli.png)
 ![kroketti](Screenshots/kroketti.png)
-![kurkkumopopeli](Screenshots/kurkkumopopeli.png)
+![kurkkumopopeli](Screenshots/Kurkkumopopeli.png)
 ![gambina](Screenshots/gambina.png)
